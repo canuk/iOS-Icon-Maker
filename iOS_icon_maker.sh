@@ -24,17 +24,17 @@ function createIconImage()
 	iconDimension=$1
 	iconName=$2
 
-	convert "$path" -resize ${iconDimension}x${iconDimension}^ -gravity center -extent ${iconDimension}x${iconDimension} $iconName
+	convert "$path" -resize ${iconDimension}x${iconDimension}^ -gravity center -extent ${iconDimension}x${iconDimension} -density 72 $iconName
 }
 
 # Create all the suggested icons for both the iPhone and iPad platforms to ensure the best appearance.
-createIconImage 57 icon_iphone.png
-createIconImage 114 icon_iphone@2x.png
-createIconImage 29 icon_iphone_spotlight.png
-createIconImage 58 icon_iphone_spotlight@2x.png
-createIconImage 72 icon_ipad.png
-createIconImage 144 icon_ipad@2x.png
-createIconImage 50 icon_ipad_spotlight.png
-createIconImage 100 icon_ipad_spotlight@2x.png
+createIconImage 57 Icon.png
+createIconImage 114 Icon@2x.png
+createIconImage 29 Icon-Small.png
+createIconImage 58 Icon-Small@2x.png
+createIconImage 72 Icon-72.png
+createIconImage 144 Icon-72@2x.png
+createIconImage 50 Icon-Small-50.png
+createIconImage 100 Icon-Small-50@2x.png
 createIconImage 512 iTunesArtwork
 createIconImage 1024 iTunesArtwork@2x
